@@ -48,7 +48,6 @@
     <Compile Include="Example.cs" />
     <Compile Include="ExampleClassProperties.cs" />
     <Compile Include="ExampleClassConstructor.cs" />
-    <Compile Include="DateTimeDataContractSurrogate.cs" />
     <Compile Include="NewClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecondClass.cs" />

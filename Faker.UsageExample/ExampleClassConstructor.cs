@@ -7,11 +7,13 @@ namespace Faker.UsageExample
     [DataContract]
     public class ExampleClassConstructor : ExampleClassProperties
     {
+       
+
         [DataMember]
         public int CustomGeneratorCheckProperty2
         { get; set; }
 
-      
+  
           public ExampleClassConstructor(int intValue, bool boolValue, int customGeneratorCheckProperty, int customGeneratorCheckProperty2)
         {
             PublicIntSetter = intValue;
@@ -20,4 +22,5 @@ namespace Faker.UsageExample
             CustomGeneratorCheckProperty2 = customGeneratorCheckProperty2;
         }
     }
+    
 }
