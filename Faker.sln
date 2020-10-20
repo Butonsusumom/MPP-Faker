@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker", "Faker\Faker.csproj", "{8CB0E27A-A0DA-42F2-B69E-9F08DEBF76F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.ValueGenerators", "Faker.ValueGenerators\Faker.ValueGenerators.csproj", "{B60B102A-818D-43F1-BAF5-1F03AFEE58D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.ValueGenerators.CharGeneratorPlugin", "Faker.ValueGenerators.CharGeneratorPlugin\Faker.ValueGenerators.CharGeneratorPlugin.csproj", "{72A31A5E-7A0F-490D-810F-5DDB8E6B6677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.ValueGenerators.StringGeneratorPlugin", "Faker.ValueGenerators.StringGeneratorPlugin\Faker.ValueGenerators.StringGeneratorPlugin.csproj", "{87E4D56D-07E7-4EB9-86F8-0DB3BFE10056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.UsageExample", "Faker.UsageExample\Faker.UsageExample.csproj", "{4029EAD4-93D5-4DDD-92C8-A7E3B9AE1017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.UnitTests", "Faker.UnitTests\Faker.UnitTests.csproj", "{5771BD48-36E7-4398-9E48-51C4549D8C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.ValueGenerators.CustomGenerators", "Faker.ValueGenerators.CustomGenerators\Faker.ValueGenerators.CustomGenerators.csproj", "{5C329D48-CEEE-450A-BB91-C3CFE326965B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CB0E27A-A0DA-42F2-B69E-9F08DEBF76F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB0E27A-A0DA-42F2-B69E-9F08DEBF76F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB0E27A-A0DA-42F2-B69E-9F08DEBF76F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB0E27A-A0DA-42F2-B69E-9F08DEBF76F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B60B102A-818D-43F1-BAF5-1F03AFEE58D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B60B102A-818D-43F1-BAF5-1F03AFEE58D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B60B102A-818D-43F1-BAF5-1F03AFEE58D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B60B102A-818D-43F1-BAF5-1F03AFEE58D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72A31A5E-7A0F-490D-810F-5DDB8E6B6677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A31A5E-7A0F-490D-810F-5DDB8E6B6677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A31A5E-7A0F-490D-810F-5DDB8E6B6677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A31A5E-7A0F-490D-810F-5DDB8E6B6677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E4D56D-07E7-4EB9-86F8-0DB3BFE10056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E4D56D-07E7-4EB9-86F8-0DB3BFE10056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E4D56D-07E7-4EB9-86F8-0DB3BFE10056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E4D56D-07E7-4EB9-86F8-0DB3BFE10056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4029EAD4-93D5-4DDD-92C8-A7E3B9AE1017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4029EAD4-93D5-4DDD-92C8-A7E3B9AE1017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4029EAD4-93D5-4DDD-92C8-A7E3B9AE1017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4029EAD4-93D5-4DDD-92C8-A7E3B9AE1017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5771BD48-36E7-4398-9E48-51C4549D8C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5771BD48-36E7-4398-9E48-51C4549D8C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5771BD48-36E7-4398-9E48-51C4549D8C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5771BD48-36E7-4398-9E48-51C4549D8C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C329D48-CEEE-450A-BB91-C3CFE326965B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C329D48-CEEE-450A-BB91-C3CFE326965B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C329D48-CEEE-450A-BB91-C3CFE326965B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C329D48-CEEE-450A-BB91-C3CFE326965B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB60DD8A-7853-47AE-9AEC-B431C413BBDE}
+	EndGlobalSection
+EndGlobal
