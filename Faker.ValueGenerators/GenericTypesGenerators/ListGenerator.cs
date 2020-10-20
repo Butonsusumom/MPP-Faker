@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Faker.ValueGenerators.BaseTypesGenerators;
+using Faker.ValueGenerators.GenericTypesGenerators.ArraysGenerators;
 using Faker;
 
 namespace Faker.ValueGenerators.GenericTypesGenerators
@@ -10,7 +11,6 @@ namespace Faker.ValueGenerators.GenericTypesGenerators
     {
         protected readonly ByteValueGenerator byteValueGenerator;
         protected IDictionary<Type, IBaseTypeGenerator> baseTypesGenerators;
-        //protected IDictionary<Type, IGenericTypeGenerator> genericTypesGenerators;
 
         public Type GeneratedType
         { get; protected set; }
@@ -31,12 +31,26 @@ namespace Faker.ValueGenerators.GenericTypesGenerators
             }
             else 
             {
-                byte listSize = (byte)byteValueGenerator.Generate();
-
-                for (int i = 0; i < listSize; i++)
+                if(baseType.IsArray)
                 {
-                    //if(baseType==)
-                    result.Add(Generate(baseType.GetGenericArguments()[0]));
+                    byte listSize = (byte) byteValueGenerator.Generate();
+
+                    for (int i = 0; i < listSize; i++)
+                    {
+                        result.Add(Generate(baseType.GetElementType()));
+                    }
+                }
+                else
+                {
+                    byte listSize = (byte) byteValueGenerator.Generate();
+                   // IArrayGenerator arrayTypeGenerator = new SingleRankArrayGenerator();
+                    //SingleRankArrayGenerator arrayGenerator = new SingleRankArrayGenerator(baseTypesGenerators,genericTypesGenerators);
+                    for (int i = 0; i < listSize; i++)
+                        
+                    {
+                        
+                        result.Add(Generate(baseType.GetGenericArguments()[0]));
+                    }
                 }
             }
             return result;
@@ -46,7 +60,6 @@ namespace Faker.ValueGenerators.GenericTypesGenerators
         {
             GeneratedType = typeof(List<>);
             this.baseTypesGenerators = baseTypesGenerators;
-            //this.genericTypesGenerators = genericTypesGenerators;
             byteValueGenerator = new ByteValueGenerator();
         }
     }

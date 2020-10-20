@@ -5,10 +5,10 @@ namespace Faker.ValueGenerators.BaseTypesGenerators
     public class DateTimeValueGenerator : IBaseTypeGenerator
     {
         protected readonly Random random;
-
+       // protected Random random = new Random((int)DateTime.Now.Ticks & 0x0000FFFF);
         public Type GeneratedType
         { get; protected set; }
-
+        
         public object Generate()
         {
             /* generated values are limited according to DateTime limitations */
@@ -21,6 +21,7 @@ namespace Faker.ValueGenerators.BaseTypesGenerators
             int millisecond = random.Next(0, 1000);
 
             return new DateTime(year, month, day, hour, minute, second, millisecond);
+           
         }
 
         public DateTimeValueGenerator()

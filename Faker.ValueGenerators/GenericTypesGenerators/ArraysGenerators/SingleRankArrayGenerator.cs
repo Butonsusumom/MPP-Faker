@@ -50,7 +50,6 @@ namespace Faker.ValueGenerators.GenericTypesGenerators.ArraysGenerators
 
                         for (int i = 0; i < result.Length; i++)
                         {
-                            Type t = baseType.GetElementType();
                             result.SetValue(Generate(baseType.GetElementType()), i);
                         }
 

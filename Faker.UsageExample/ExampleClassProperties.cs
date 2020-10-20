@@ -6,8 +6,11 @@ namespace Faker.UsageExample
 {
     [DataContract]
     public class ExampleClassProperties
-    {
-        
+    {       
+        [DataMember]
+        public DateTime dateTimeField;
+        [DataMember]
+        public object objectField;
         [DataMember]
         public char publicStringField;
         [DataMember]
@@ -30,7 +33,7 @@ namespace Faker.UsageExample
         public bool[] publicList;
         
        [DataMember]
-         public List<int>[] publicArray;
+         public List<int> publicArray;
         
         //[DataMember]
         //public List<List<char>> publicListInList;

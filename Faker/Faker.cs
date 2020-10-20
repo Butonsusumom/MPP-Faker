@@ -14,6 +14,7 @@ namespace Faker
         public Dictionary<Type, IBaseTypeGenerator> baseTypesGenerators;
         public Dictionary<Type, IGenericTypeGenerator> genericTypesGenerators;
         public Dictionary<int, IArrayGenerator> arraysGenerators;
+
         public Dictionary<PropertyInfo, IBaseTypeGenerator> customGenerators;
         public Stack<Type> generatedTypes;
 
