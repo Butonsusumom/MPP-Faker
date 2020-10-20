@@ -45,12 +45,12 @@ namespace Faker.ValueGenerators
             return dictionary;
         }
 
-        public static Dictionary<int, IArrayGenerator> CreateArraysGeneratorsDictionary(Dictionary<Type, IBaseTypeGenerator> baseTypesGenerators)
+        public static Dictionary<int, IArrayGenerator> CreateArraysGeneratorsDictionary(Dictionary<Type, IBaseTypeGenerator> baseTypesGenerators,Dictionary<Type, IGenericTypeGenerator> genericTypesGenerators)
         {
             var dictionary = new Dictionary<int, IArrayGenerator>();
             IArrayGenerator generator;
 
-            generator = new SingleRankArrayGenerator(baseTypesGenerators);
+            generator = new SingleRankArrayGenerator(baseTypesGenerators,genericTypesGenerators);
             dictionary.Add(generator.ArrayRank, generator);
 
             return dictionary;

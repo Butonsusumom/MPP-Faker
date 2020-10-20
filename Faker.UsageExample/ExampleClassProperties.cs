@@ -26,11 +26,11 @@ namespace Faker.UsageExample
         [DataMember]
         private readonly int nonPublicIntField;
 
-       // [DataMember]
-       // public List<string> publicList;
+        [DataMember]
+        public bool[] publicList;
         
        [DataMember]
-         public List<int[]> publicArray;
+         public List<int>[] publicArray;
         
         //[DataMember]
         //public List<List<char>> publicListInList;

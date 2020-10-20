@@ -181,7 +181,7 @@ namespace Faker
             generatedTypes = new Stack<Type>();
             baseTypesGenerators = GeneratorsSetCreator.CreateBaseTypesGeneratorsDictionary();
             genericTypesGenerators = GeneratorsSetCreator.CreateGenericTypesGeneratorsDictionary(baseTypesGenerators);
-            arraysGenerators = GeneratorsSetCreator.CreateArraysGeneratorsDictionary(baseTypesGenerators);
+            arraysGenerators = GeneratorsSetCreator.CreateArraysGeneratorsDictionary(baseTypesGenerators,genericTypesGenerators);
             if (config == null)
             {
                 customGenerators = new Dictionary<PropertyInfo, IBaseTypeGenerator>();
