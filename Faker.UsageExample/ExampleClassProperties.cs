@@ -4,7 +4,6 @@ using System.Runtime.Serialization;
 
 namespace Faker.UsageExample
 {
-    [DataContract]
     public class ExampleClassProperties
     {       
         [DataMember]
@@ -39,13 +38,14 @@ namespace Faker.UsageExample
         //public List<List<char>> publicListInList;
 
         [DataMember]
-        public ExampleClassProperties nestedObject;
+        public NewClass nestedObject;
 
         [DataMember]
         public int CustomGeneratorCheckProperty
         { get; set; }
 
         public ExampleClassProperties()
-        { }
+        {
+        }
     }
 }

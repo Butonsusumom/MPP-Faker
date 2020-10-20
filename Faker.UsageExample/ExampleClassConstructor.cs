@@ -1,4 +1,6 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace Faker.UsageExample
 {
@@ -9,7 +11,8 @@ namespace Faker.UsageExample
         public int CustomGeneratorCheckProperty2
         { get; set; }
 
-        public ExampleClassConstructor(int intValue, bool boolValue, int customGeneratorCheckProperty, int customGeneratorCheckProperty2)
+      
+          public ExampleClassConstructor(int intValue, bool boolValue, int customGeneratorCheckProperty, int customGeneratorCheckProperty2)
         {
             PublicIntSetter = intValue;
             publicBoolField = boolValue;
